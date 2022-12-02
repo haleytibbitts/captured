@@ -1,0 +1,83 @@
+@use "./variables" as *;
+
+html {
+    font-size: 125%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1080px;
+}
+
+.img-container {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+nav a {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: $primary;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-size: 1.3rem;
+    letter-spacing: 1.1px;
+}
+
+nav a {
+    text-align: center;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+p,
+h5 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem;
+    color: $primary;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    background-color: $quinary;
+    border: 3px solid $quinary;
+    padding: 5px 15px;
+
+    &:hover,
+    &:focus {
+        background-color: $quaternary;
+        border: 3px solid $quinary;
+        transition: 0.3s;
+    }
+}
