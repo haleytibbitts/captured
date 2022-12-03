@@ -255,8 +255,9 @@ nav a {
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 4.6rem;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  text-align: center;
 }
 
 h2 {
@@ -274,14 +275,20 @@ h4 {
   letter-spacing: 1.1px;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav a {
+  font-size: 0.8rem;
   text-align: center;
   line-height: 1.5rem;
   letter-spacing: 1px;
 }
 
 p,
-h5 {
+h5,
+.text-container a {
   font-family: "Roboto", sans-serif;
   line-height: 1.6rem;
   color: #2C2C2C;
@@ -296,12 +303,124 @@ button {
   line-height: 1.6rem;
   letter-spacing: 1px;
   background-color: #4CEEA7;
-  border: 3px solid #4CEEA7;
-  padding: 5px 15px;
+  border: none;
+  padding: 8px 15px;
 }
 button:hover, button:focus {
   background-color: #FDFA69;
-  border: 3px solid #4CEEA7;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+header {
+  background-size: cover;
+  position: relative;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header li {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+header a {
+  padding: 4px 2px;
+}
+header a:hover,
+header a:focus {
+  border-bottom: 2px solid #4CEEA7;
+}
+header .text-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header h1 {
+  position: relative;
+  z-index: 10;
+}
+header .box-shadow {
+  background-color: #FDFA69;
+  width: 45vw;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+}
+header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 93%;
+  height: 85%;
+}
+
+.index-header {
+  background-image: url("../assets/header-image.jpg");
+  background-position: left;
+  height: 70vh;
+}
+.index-header .text-container {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.index-header h1 {
+  font-size: 6rem;
+  bottom: 50px;
+}
+
+.blog-header {
+  background-image: url("../assets/blog-header.jpg");
+  background-position: 80%;
+  height: 60vh;
+}
+.blog-header .text-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog-header h1 {
+  bottom: 95px;
+}
+
+.contact-header {
+  background-image: url("../assets/contact-header.jpg");
+  height: 60vh;
+}
+.contact-header .text-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-header h1 {
+  bottom: 110px;
+  left: 50px;
 }
