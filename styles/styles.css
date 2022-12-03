@@ -268,6 +268,7 @@ h2 {
 h3 {
   font-size: 1.6rem;
   letter-spacing: 1px;
+  margin: 0 0 10px 0;
 }
 
 h4 {
@@ -284,6 +285,11 @@ nav a {
   text-align: center;
   line-height: 1.5rem;
   letter-spacing: 1px;
+}
+
+p,
+h5 {
+  font-size: 0.8rem;
 }
 
 p,
@@ -394,7 +400,7 @@ header img {
 }
 .index-header h1 {
   font-size: 6rem;
-  bottom: 50px;
+  bottom: 65px;
 }
 
 .blog-header {
@@ -423,4 +429,94 @@ header img {
 .contact-header h1 {
   bottom: 110px;
   left: 50px;
+}
+
+section h2 {
+  margin: 0;
+}
+section .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about {
+  background-color: #EFFDF3;
+  padding: 200px 0;
+}
+.about .text-container {
+  height: 30vh;
+  width: 70vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.featured-posts {
+  background-color: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.featured-posts .img-container,
+.featured-posts .text-container {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.featured-posts .text-container {
+  padding: 4vw 8vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.featured-posts .text-container:first-of-type button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.featured-posts .text-container:nth-of-type(2) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.featured-posts .text-container:nth-of-type(2) p {
+  text-align: right;
+}
+.featured-posts img {
+  width: 85%;
+  height: 100%;
+}
+.featured-posts .img-container:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.featured-posts .one {
+  -webkit-box-shadow: 41px 34px 0px 0px #FDFA69;
+          box-shadow: 41px 34px 0px 0px #FDFA69;
+  position: relative;
+  top: -34px;
+}
+.featured-posts .two {
+  -webkit-box-shadow: -41px 34px 0px 0px #FDFA69;
+          box-shadow: -41px 34px 0px 0px #FDFA69;
+  position: relative;
+  bottom: -34px;
 }
