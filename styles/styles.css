@@ -261,7 +261,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   letter-spacing: 1px;
 }
 
@@ -553,6 +553,8 @@ section .text-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .links a {
   display: -webkit-box;
@@ -565,17 +567,54 @@ section .text-container {
   position: relative;
   border-bottom: 2px solid #EFFDF3;
   top: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .links p {
   margin-left: 58px;
 }
 .links a:hover .icon-container {
   background-color: #FDFA69;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .links a:hover h3 {
   border-bottom: 2px solid #4CEEA7;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+}
+
+.map-divider {
+  background-image: url("../assets/banner.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 45vh;
+}
+
+.monthly-feature {
+  background-color: #EFFDF3;
+  padding: 85px 0 70px 0;
+}
+.monthly-feature .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.monthly-feature .text-container {
+  -ms-flex-preferred-size: 66%;
+      flex-basis: 66%;
+}
+.monthly-feature .img-container {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+.monthly-feature img {
+  width: 100%;
+  height: 95%;
+  -webkit-box-shadow: 30px 30px 0px 0px #FDFA69;
+          box-shadow: 30px 30px 0px 0px #FDFA69;
+}
+.monthly-feature button {
+  margin-top: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
