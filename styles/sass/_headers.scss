@@ -21,6 +21,7 @@ header {
 
     a {
         padding: 4px 2px;
+        transition: 0.3s;
     }
 
     a:hover,
@@ -98,7 +99,7 @@ header {
     }
 
     h1 {
-        bottom: 110px;
+        bottom: 90px;
         left: 50px;
     }
 }

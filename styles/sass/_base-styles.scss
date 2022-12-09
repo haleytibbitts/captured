@@ -87,11 +87,12 @@ button {
     background-color: $quinary;
     border: none;
     padding: 8px 15px;
+    transition: 0.3s;
 
     &:hover,
     &:focus {
         background-color: $quaternary;
-        transition: 0.3s;
+        transform: scale(1.1, 1.1);
     }
 }
 

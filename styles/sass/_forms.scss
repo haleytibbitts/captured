@@ -15,7 +15,6 @@ form {
     .name,
     .email,
     textarea {
-        background-color: $tertiary;
         padding-left: 20px;
         font-size: 0.7rem;
         font-family: 'Roboto', sans-serif;
@@ -47,6 +46,7 @@ form {
         flex-basis: 100%;
         border: 2px solid $quinary;
         padding-top: 10px;
+        resize: none;
 
     }
 
