@@ -47,7 +47,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     letter-spacing: 1.1px;
 }
 
@@ -64,7 +64,7 @@ nav a {
 
 p,
 h5 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 p,
@@ -73,6 +73,7 @@ h5,
     font-family: 'Roboto', sans-serif;
     line-height: 1.4rem;
     color: $primary;
+    font-weight: normal;
 }
 
 li {
@@ -91,5 +92,16 @@ button {
     &:focus {
         background-color: $quaternary;
         transition: 0.3s;
+    }
+}
+
+footer {
+    background-color: $primary;
+
+    p {
+        color: $secondary;
+        text-align: center;
+        padding: 5px 0;
+        margin: 0;
     }
 }

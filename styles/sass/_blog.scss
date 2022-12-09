@@ -1,0 +1,146 @@
+@use "./variables" as *;
+
+.blog {
+
+    main {
+        background-color: $tertiary;
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.sidebar {
+    background-color: $secondary;
+    align-self: flex-start;
+    flex-basis: 30%;
+    position: relative;
+    top: 120px;
+    left: 10px;
+
+    span a {
+        font-weight: bold;
+        font-style: italic;
+        border-bottom: 1px solid $secondary;
+        transform: 0.2s;
+
+        &:hover,
+        &:focus {
+            border-bottom: 1px solid $quinary;
+        }
+    }
+
+    h4 {
+        padding-left: 20px;
+    }
+
+    p,
+    ul {
+        padding-left: 25px;
+        margin-right: 40px;
+    }
+
+    ul {
+        font-size: 0.7rem;
+
+        li {
+            border-bottom: 1px solid $secondary;
+            transition: 0.2s;
+
+            &::before {
+                content: "\2022";
+                color: $quinary;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+
+            }
+
+            &:hover,
+            &:focus {
+                a {
+                    border-bottom: 1px solid $quinary;
+                }
+            }
+        }
+    }
+}
+
+.main-post {
+    flex-basis: 65%;
+    position: relative;
+
+    article {
+        margin-top: 260px;
+        padding-top: 8vh;
+        padding-left: 40px;
+        border-left: 5px solid $quaternary;
+        border-bottom: 5px solid $quaternary;
+        border-top: 5px solid $quaternary;
+
+        p {
+            margin-left: 5px;
+        }
+    }
+
+    h5 {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+}
+
+.dandelions {
+    position: absolute;
+    width: 115%;
+    top: -28vh;
+    right: -9.9vw;
+
+    img {
+        box-shadow: -30px 30px 0px 0px $quaternary;
+    }
+}
+
+.magic-lens {
+    position: relative;
+    width: 140%;
+    top: -15px;
+    left: -145px;
+}
+
+.posts {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin: 30px 0 50px 0;
+    }
+
+    .comment {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .img-container {
+            flex-basis: 10%;
+            width: 15%;
+            height: 15%;
+        }
+
+        .text-container {
+            flex-basis: 86%;
+            position: relative;
+            top: -6px;
+
+            p {
+                margin-top: 0;
+            }
+        }
+
+        h5 {
+            margin: 0;
+        }
+    }
+}

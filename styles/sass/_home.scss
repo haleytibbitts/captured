@@ -166,3 +166,17 @@ section {
         align-self: flex-start;
     }
 }
+
+.gallery {
+    background-color: $secondary;
+
+    .wrapper {
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img-container {
+        flex-basis: calc(33% - 20px);
+    }
+}

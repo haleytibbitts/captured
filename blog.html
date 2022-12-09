@@ -13,7 +13,7 @@
     <title>Captured — Blog</title>
 </head>
 
-<body>
+<body class="blog">
     <header class="blog-header">
         <nav class="wrapper">
             <ul>
@@ -30,78 +30,16 @@
     </header>
     <!--header ends-->
     <main>
-        <section class="main-post">
-            <div class="wrapper">
-                <article>
-                    <img src="./assets/blog-post-image.jpg"
-                        alt="A feminine-presenting person sitting in a field of fluffy dandelions at golden hour, taking a picture of a forest in the background.">
-                    <h2>finding great locations</h2>
-                    <h5>Monday May 4th, 2019 by Dieula</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea non saepe commodi dignissimos
-                        reiciendis odio illo voluptate autem ad libero debitis quisquam iste quia officiis omnis,
-                        expedita laboriosam assumenda?
-                        Numquam repudiandae expedita quasi saepe ipsa, voluptates quia nam distinctio debitis soluta.
-                        Aliquam vitae quis reprehenderit quam. Deserunt numquam modi doloremque necessitatibus. Incidunt
-                        blanditiis ducimus accusantium, libero labore obcaecati harum!
-                        Eius perspiciatis harum quos autem, nisi reprehenderit, recusandae ipsum ipsa inventore atque
-                        consequuntur voluptatum in nam. Adipisci, distinctio nihil delectus sequi enim beatae rerum,
-                        fuga culpa maiores magni, blanditiis dolorum!
-                        Consequatur voluptatibus, tempora quis aperiam culpa, dicta distinctio sed hic, asperiores ab
-                        odio necessitatibus? Cupiditate earum corporis omnis reprehenderit. Nihil rerum voluptatibus
-                        dolor dignissimos, nobis debitis laboriosam autem ullam recusandae.
-                        Deserunt ullam velit animi modi reiciendis eos, laudantium fugit labore non iste asperiores
-                        commodi adipisci optio aliquam hic neque praesentium cupiditate, repudiandae inventore deleniti
-                        error! Ab officiis recusandae blanditiis ex!</p>
-                </article>
-                <!--article ends-->
-                <h3>comments:</h3>
-                <div class="comment">
-                    <div class="img-container">
-                        <img src="./assets/comment-1.jpg" alt="A masculine-presenting commenter's profile picture.">
-                    </div>
-                    <div class="text-container">
-                        <h5>Tuesday October 9th, 2018 by Jeremy</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, libero pariatur culpa quasi
-                            dolorum ipsum adipisci. In modi numquam debitis doloribus sint. Dolor architecto obcaecati
-                            molestias, doloribus deserunt quam libero!</p>
-                    </div>
-                </div>
-                <!--first comment ends-->
-                <div class="comment">
-                    <div class="img-container">
-                        <img src="./assets/comment-2.jpg" alt="A feminine-presenting commenter's profile picture.">
-                    </div>
-                    <div class="text-container">
-                        <h5>Wednesday October 10th, 2018 by Julia</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, iusto possimus, eius
-                            maxime velit ea temporibus cumque veritatis, placeat laboriosam ratione molestias. Cum
-                            doloremque officiis vero amet. Cum, quibusdam magni.</p>
-                    </div>
-                </div>
-                <!--second comment ends-->
-                <form action="#">
-                    <label for="name" class="sr-only">Enter name:</label>
-                    <input type="text" id="name" placeholder="Name">
-                    <label for="email" class="sr-only">Enter email address:</label>
-                    <input type="email" id="email" placeholder="Email address">
-                    <label for="comment" class="sr-only">Enter a comment:</label>
-                    <textarea name="comment" id="comment" cols="60" rows="8" placeholder="Comment"></textarea>
-                    <button type="submit">post comment</button>
-                </form>
-                <!--form ends-->
-            </div>
-        </section>
-        <!--main-post section ends-->
-        <section class="sidebar">
-            <div class="wrapper">
-                <div class="img-container">
+        <div class="wrapper">
+            <section class="sidebar">
+                <div class="img-container sidebar magic-lens">
                     <img src="./assets/side-blog-image.jpg"
                         alt="A camera lens suspended in mid-air above an open palm with the ocean, mountains, and a blue sky in the background.">
                 </div>
                 <div class="text-container">
                     <h4>about captured</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis laudantium iure.
-                        <a href="#">Find out more.</a>
+                    <p>Nam dabipus nisl vitae elit fringilla retrum. Aenean sollicitudin, erat a elementum. <span><a
+                                href="#">Find out more.</a></span>
                     </p>
                 </div>
                 <div class="text-container">
@@ -122,9 +60,97 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <!--sidebar ends-->
+            </section>
+            <!--sidebar ends-->
+            <section class="main-post">
+                <div class="img-container main-post dandelions">
+                    <img src="./assets/blog-post-image.jpg"
+                        alt="A feminine presenting person sitting in a field of dandelions at golden hour.">
+                </div>
+                <article>
+                    <div class="text-container">
+                        <h2>finding great locations</h2>
+                        <h5>Monday May 4th, 2019 by Dieula</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea non saepe commodi
+                            dignissimos
+                            reiciendis odio illo voluptate autem ad libero debitis quisquam iste quia officiis omnis,
+                            expedita laboriosam assumenda?
+                            Numquam repudiandae expedita quasi saepe ipsa, voluptates quia nam distinctio debitis
+                            soluta. <br>
+                            Aliquam vitae quis reprehenderit quam. Deserunt numquam modi doloremque necessitatibus.
+                            Incidunt
+                            blanditiis ducimus accusantium, libero labore obcaecati harum!
+                            Eius perspiciatis harum quos autem, nisi reprehenderit, recusandae ipsum ipsa inventore
+                            atque
+                            consequuntur voluptatum in nam. Adipisci, distinctio nihil delectus sequi enim beatae rerum,
+                            fuga culpa maiores magni, blanditiis dolorum!<br>
+                            Consequatur voluptatibus, tempora quis aperiam culpa, dicta distinctio sed hic, asperiores
+                            ab
+                            odio necessitatibus? Cupiditate earum corporis omnis reprehenderit. Nihil rerum voluptatibus
+                            dolor dignissimos, nobis debitis laboriosam autem ullam recusandae.
+                            Deserunt ullam velit animi modi reiciendis eos, laudantium fugit labore non iste asperiores
+                            commodi adipisci optio aliquam hic neque praesentium cupiditate, repudiandae inventore
+                            deleniti
+                            error! Ab officiis recusandae blanditiis ex!<br> Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Rem nam omnis aspernatur quae facilis laudantium? Distinctio quia repellat
+                            assumenda dolorem animi sit ullam sequi tenetur vero, quos amet, non blanditiis quod, at
+                            praesentium corrupti necessitatibus in vel enim reiciendis quo quisquam! Porro enim expedita
+                            eum voluptatibus cupiditate? Aperiam, dicta? Quisquam.<br> Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Iure consequatur quibusdam, doloremque officiis quas
+                            animi.
+                            Ullam, magnam exercitationem quis sed vitae debitis dolor non fuga sapiente, doloribus amet.
+                            Deleniti voluptatum necessitatibus ab nulla eligendi modi tenetur harum. Accusamus, facere
+                            laborum alias eius velit veniam possimus maxime necessitatibus, quisquam neque consectetur,
+                            voluptas ab provident voluptates? Recusandae vel itaque deleniti vitae ea?</p>
+                    </div>
+                </article>
+                <!--article ends-->
+                <section class="comments-section">
+                    <div class="posts">
+                        <h3>comments:</h3>
+                        <div class="comment">
+                            <div class="img-container">
+                                <img src="./assets/comment-1.jpg"
+                                    alt="A masculine-presenting commenter's profile picture.">
+                            </div>
+                            <div class="text-container">
+                                <h5>Tuesday October 9th, 2018 by Jeremy</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, iusto possimus,
+                                    eius
+                                    maxime velit ea temporibus cumque veritatis, placeat laboriosam ratione molestias.
+                                    Cum
+                                    doloremque officiis vero amet. Cum, quibusdam magni.</p>
+                            </div>
+                        </div>
+                        <!--first comment ends-->
+                        <div class="comment">
+                            <div class="img-container">
+                                <img src="./assets/comment-2.jpg"
+                                    alt="A feminine-presenting commenter's profile picture.">
+                            </div>
+                            <div class="text-container">
+                                <h5>Wednesday October 10th, 2018 by Julia</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, libero pariatur culpa
+                                    quasi
+                                    dolorum ipsum adipisci. In modi numquam debitis doloribus sint. Dolor architecto
+                                    obcaecati libero!</p>
+                            </div>
+                        </div> <!--second comment ends-->
+                    </div> <!--posts end-->
+                    <form action="#">
+                        <label for="name" class="sr-only">Enter name:</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="email" class="sr-only">Enter email address:</label>
+                        <input type="email" id="email" placeholder="Email address">
+                        <label for="comment" class="sr-only">Enter a comment:</label>
+                        <textarea name="comment" id="comment" cols="60" rows="8" placeholder="Comment"></textarea>
+                        <button type="submit">post comment</button>
+                    </form>
+                    <!--form ends-->
+                </section><!-- comments section ends -->
+            </section>
+            <!--main-post section ends-->
+        </div>
     </main>
     <footer>
         <p>Copyright &copy; 2018 HackerYou</p>
