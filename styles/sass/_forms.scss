@@ -1,0 +1,56 @@
+@use "./variables" as *;
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .name,
+    .email,
+    textarea,
+    button {
+        margin-bottom: 30px;
+    }
+
+    .name,
+    .email,
+    textarea {
+        background-color: $tertiary;
+        padding-left: 20px;
+        font-size: 0.7rem;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.4rem;
+        color: $primary;
+        opacity: 1;
+        font-weight: normal;
+
+        &::placeholder {
+            font-size: 0.7rem;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.4rem;
+            color: $primary;
+            opacity: 1;
+            font-weight: normal;
+        }
+
+    }
+
+    .name,
+    .email {
+        flex-basis: 47%;
+        border: none;
+        border-bottom: 2px solid $quinary;
+        padding-bottom: 10px;
+    }
+
+    textarea {
+        flex-basis: 100%;
+        border: 2px solid $quinary;
+        padding-top: 10px;
+
+    }
+
+    button {
+        flex-basis: 100%;
+    }
+}

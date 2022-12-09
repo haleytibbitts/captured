@@ -89,6 +89,12 @@
         margin-top: 5px;
         margin-left: 5px;
     }
+
+    .name,
+    .email,
+    textarea {
+        background-color: $tertiary;
+    }
 }
 
 .dandelions {
