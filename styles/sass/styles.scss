@@ -6,3 +6,9 @@
 @use "./blog";
 @use "./forms";
 @use "./contact";
+@use "./media-queries/mq-headers";
+@use "./media-queries/mq-base-styles";
+@use "./media-queries/mq-home";
+@use "./media-queries/mq-blog";
+@use "./media-queries/mq-forms";
+@use "./media-queries/mq-contact";

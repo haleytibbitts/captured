@@ -1,0 +1,67 @@
+@use "../variables" as *;
+
+@media (max-width: 1168px) {
+    header {
+
+        ul {
+            width: 60%;
+        }
+
+        .box-shadow {
+            width: 40vw;
+            height: 50vh;
+        }
+
+        img {
+            object-position: 65%;
+            width: 90%;
+        }
+    }
+
+    .index-header {
+        height: 55vh;
+
+        h1 {
+            top: 90px;
+            background-color: rgb(76, 238, 167, 1);
+            padding: 10px 5px 30px 90px;
+        }
+
+        .text-container {
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+    }
+
+    .blog-header {
+
+        .text-container {
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        h1 {
+            bottom: 160px;
+            left: 0px;
+            background-color: $quinary;
+            padding: 0 20px 5px 200px;
+        }
+    }
+
+    .contact-header {
+        .text-container {
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h1 {
+            bottom: 90px;
+            left: 0px;
+            background-color: $quinary;
+            padding: 0 20px 5px 150px;
+            margin: 0;
+        }
+    }
+}

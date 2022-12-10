@@ -1,0 +1,83 @@
+@use "../variables" as *;
+
+@media (max-width: 1168px) {
+    .blog {
+        main .wrapper {
+            flex-direction: column-reverse;
+        }
+    }
+
+
+    .main-post {
+        display: flex;
+        flex-direction: column;
+
+        article {
+            max-width: 75%;
+            margin: -170px auto 0 auto;
+        }
+    }
+
+    .sidebar {
+        background-color: $secondary;
+        align-self: center;
+        position: static;
+        display: flex;
+        flex-direction: column;
+
+        span a {
+            display: block;
+        }
+
+        h4 {
+            text-align: center;
+            padding-left: 0px;
+            margin-bottom: 0;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.dandelions {
+    position: relative;
+    top: -100px;
+    right: 0;
+    width: 75%;
+    align-self: center;
+}
+
+.magic-lens {
+    position: static;
+    width: 75%;
+    align-self: center;
+}
+
+.comments-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        width: 75%;
+    }
+}
+
+.posts {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+
+    .comment {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+    }
+}

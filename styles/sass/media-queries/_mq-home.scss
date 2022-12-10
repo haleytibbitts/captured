@@ -1,0 +1,55 @@
+@use "../variables" as *;
+
+@media (max-width: 1168px) {
+
+    .featured-posts {
+
+        .text-container {
+            padding: 5vw 8vw;
+
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        .text-container:nth-of-type(2) {
+            align-items: flex-end;
+
+            p {
+                text-align: right;
+            }
+        }
+
+        img {
+            width: 80%;
+            height: 90%;
+        }
+
+        .img-container:nth-of-type(2) {
+            align-items: flex-start;
+        }
+    }
+
+    .map-divider {
+        height: 25vh;
+    }
+
+    .monthly-feature {
+
+        .text-container {
+            justify-content: center;
+
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            flex-basis: 50%;
+        }
+
+        .img-container {
+            flex-basis: 40%;
+        }
+
+    }
+}
