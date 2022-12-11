@@ -1,1 +1,11 @@
 @use "../variables" as *;
+
+@media (max-width: 753px) {
+    form {
+
+        .name,
+        .email {
+            flex-basis: 100%;
+        }
+    }
+}
