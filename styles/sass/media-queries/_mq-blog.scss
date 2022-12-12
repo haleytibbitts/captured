@@ -14,7 +14,11 @@
 
         article {
             max-width: 75%;
-            margin: -170px auto 0 auto;
+            margin: -100px auto 0 auto;
+
+            h2 {
+                margin-top: 20px;
+            }
         }
     }
 
@@ -43,41 +47,41 @@
             margin-bottom: 20px;
         }
     }
-}
 
-.dandelions {
-    position: relative;
-    top: -100px;
-    right: 0;
-    width: 75%;
-    align-self: center;
-}
-
-.magic-lens {
-    position: static;
-    width: 75%;
-    align-self: center;
-}
-
-.comments-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    form {
+    .dandelions {
+        position: relative;
+        top: -40px;
+        right: 0;
         width: 75%;
+        align-self: center;
     }
-}
 
-.posts {
-    max-width: 75%;
-    display: flex;
-    flex-direction: column;
+    .magic-lens {
+        position: static;
+        width: 75%;
+        align-self: center;
+    }
 
-    .comment {
+    .comments-section {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
 
+        form {
+            width: 75%;
+        }
+    }
+
+    .posts {
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+
+        .comment {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+        }
     }
 }
