@@ -306,7 +306,9 @@ li {
   list-style: none;
 }
 
-button {
+button,
+button:active,
+button:focus {
   text-align: center;
   line-height: 1.6rem;
   letter-spacing: 1px;
@@ -316,7 +318,9 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-button:hover, button:focus {
+button:hover,
+button:active:hover,
+button:focus:hover {
   background-color: #FDFA69;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
